@@ -24,6 +24,10 @@
       },
       'get,delete,head,post,put,patch': function(inMethod) {
         return function(inUrl, inData, inOptions) {
+          var args = arguments;
+          if (args.length === 2) {
+            return this.request(inUrl, inMethod, null, inOptions);
+          }
           return this.request(inUrl, inMethod, inData, inOptions);
         };
       }
