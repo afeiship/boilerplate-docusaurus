@@ -6,12 +6,12 @@
   var nxDeepAssign = require('@feizheng/next-deep-assign');
   var nxParam = require('@feizheng/next-param');
   var fetch = require('node-fetch');
-  var DEFAULT_OPTIONS = { dataType: 'json', responseType: 'json' };
 
   var NxNodeFetch = nx.declare('nx.NodeFetch', {
     statics: {
+      config: { dataType: 'json', responseType: 'json' },
       request: function(inUrl, inMethod, inData, inOptions) {
-        var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
+        var options = nx.mix(null, this.config, inOptions);
         var isGET = inMethod === 'get';
         var body = isGET ? null : NxDataTransform[options.dataType](inData);
         var url = isGET ? inUrl + '?' + nxParam(inData) : inUrl;

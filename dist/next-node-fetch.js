@@ -2,8 +2,8 @@
  * name: @feizheng/next-node-fetch
  * description: A wrapper for `node-fetch`.
  * url: https://github.com/afeiship/next-node-fetch
- * version: 1.0.4
- * date: 2020-01-04 16:52:17
+ * version: 1.0.5
+ * date: 2020-01-04 17:49:16
  * license: MIT
  */
 
@@ -15,12 +15,12 @@
   var nxDeepAssign = require('@feizheng/next-deep-assign');
   var nxParam = require('@feizheng/next-param');
   var fetch = require('node-fetch');
-  var DEFAULT_OPTIONS = { dataType: 'json', responseType: 'json' };
 
   var NxNodeFetch = nx.declare('nx.NodeFetch', {
     statics: {
+      config: { dataType: 'json', responseType: 'json' },
       request: function(inUrl, inMethod, inData, inOptions) {
-        var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
+        var options = nx.mix(null, this.config, inOptions);
         var isGET = inMethod === 'get';
         var body = isGET ? null : NxDataTransform[options.dataType](inData);
         var url = isGET ? inUrl + '?' + nxParam(inData) : inUrl;
