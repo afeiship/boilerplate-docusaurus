@@ -18,7 +18,7 @@
         var headers = { 'Content-Type': nxContentType(options.dataType) };
         var config = nxDeepAssign({ method: inMethod, body: body, headers: headers }, options);
         var responseHandler = function(res) {
-          return res[options.responseType]();
+          return options.responseType ? res[options.responseType]() : res;
         };
         return fetch(url, config).then(responseHandler);
       },
