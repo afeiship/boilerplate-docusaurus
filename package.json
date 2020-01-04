@@ -1,0 +1,44 @@
+{
+  "name": "@feizheng/next-node-fetch",
+  "version": "1.0.0",
+  "description": "A wrapper for `node-fetch`.",
+  "homepage": "https://github.com/afeiship/next-node-fetch",
+  "author": {
+    "name": "afei",
+    "email": "1290657123@qq.com"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "jest"
+  },
+  "main": "dist/next-node-fetch.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@feizheng/gulp-pkg-header": "^1.0.1",
+    "@feizheng/rake-git": "^1.2.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-ignore": "^3.0.0",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^24.9.0",
+    "uglify-save-license": "^0.4.1",
+    "yargs": "^15.0.2"
+  },
+  "dependencies": {
+    "@feizheng/next-content-type": "^1.0.0",
+    "@feizheng/next-data-transform": "^1.0.0",
+    "@feizheng/next-deep-assign": "^1.1.0",
+    "@feizheng/next-js-core2": "^2.0.2",
+    "@feizheng/next-param": "^1.0.0",
+    "node-fetch": "^2.6.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
