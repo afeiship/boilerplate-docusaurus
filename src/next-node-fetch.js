@@ -6,7 +6,7 @@
   var nxDeepAssign = require('@feizheng/next-deep-assign');
   var nxParam = require('@feizheng/next-param');
   var fetch = require('node-fetch');
-  var DEFAULT_OPTIONS = { type: 'json', responseType: 'text' };
+  var DEFAULT_OPTIONS = { type: 'json', responseType: 'json' };
 
   var NxNodeFetch = nx.declare('nx.NodeFetch', {
     statics: {

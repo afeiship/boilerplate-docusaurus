@@ -3,7 +3,7 @@
  * description: A wrapper for `node-fetch`.
  * url: https://github.com/afeiship/next-node-fetch
  * version: 1.0.0
- * date: 2020-01-04 14:34:09
+ * date: 2020-01-04 14:37:47
  * license: MIT
  */
 
@@ -15,7 +15,7 @@
   var nxDeepAssign = require('@feizheng/next-deep-assign');
   var nxParam = require('@feizheng/next-param');
   var fetch = require('node-fetch');
-  var DEFAULT_OPTIONS = { type: 'json', responseType: 'text' };
+  var DEFAULT_OPTIONS = { type: 'json', responseType: 'json' };
 
   var NxNodeFetch = nx.declare('nx.NodeFetch', {
     statics: {
