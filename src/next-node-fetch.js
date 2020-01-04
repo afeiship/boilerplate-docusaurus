@@ -6,16 +6,16 @@
   var nxDeepAssign = require('@feizheng/next-deep-assign');
   var nxParam = require('@feizheng/next-param');
   var fetch = require('node-fetch');
-  var DEFAULT_OPTIONS = { type: 'json', responseType: 'json' };
+  var DEFAULT_OPTIONS = { dataType: 'json', responseType: 'json' };
 
   var NxNodeFetch = nx.declare('nx.NodeFetch', {
     statics: {
       request: function(inUrl, inMethod, inData, inOptions) {
         var options = nx.mix(null, DEFAULT_OPTIONS, inOptions);
         var isGET = inMethod === 'get';
-        var body = isGET ? null : NxDataTransform[options.type](inData);
+        var body = isGET ? null : NxDataTransform[options.dataType](inData);
         var url = isGET ? inUrl + '?' + nxParam(inData) : inUrl;
-        var headers = { 'Content-Type': nxContentType(options.type) };
+        var headers = { 'Content-Type': nxContentType(options.dataType) };
         var config = nxDeepAssign({ method: inMethod, body: body, headers: headers }, options);
         var responseHandler = function(res) {
           return res[options.responseType]();
