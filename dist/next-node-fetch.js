@@ -2,8 +2,8 @@
  * name: @feizheng/next-node-fetch
  * description: A wrapper for `node-fetch`.
  * url: https://github.com/afeiship/next-node-fetch
- * version: 1.0.3
- * date: 2020-01-04 16:46:42
+ * version: 1.0.4
+ * date: 2020-01-04 16:52:17
  * license: MIT
  */
 
@@ -33,10 +33,6 @@
       },
       'get,delete,head,post,put,patch': function(inMethod) {
         return function(inUrl, inData, inOptions) {
-          var args = arguments;
-          if (args.length === 2) {
-            return this.request(inUrl, inMethod, null, inOptions);
-          }
           return this.request(inUrl, inMethod, inData, inOptions);
         };
       }
