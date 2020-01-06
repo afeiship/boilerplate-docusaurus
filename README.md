@@ -20,7 +20,7 @@ npm install -S @feizheng/next-node-fetch
 ## options
 | option       | type        | default               | description                  |
 | ------------ | ----------- | --------------------- | ---------------------------- |
-| fetch        | Function    | require('node-fetch') | c                            |
+| fetch        | Function    | require('node-fetch') | Defult fetch implement       |
 | dataType     | String      | json                  | json/raw/urlencode/multipart |
 | responseType | String/Null | json                  | json/text/null               |
 
