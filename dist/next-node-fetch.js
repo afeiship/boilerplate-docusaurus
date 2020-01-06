@@ -2,8 +2,8 @@
  * name: @feizheng/next-node-fetch
  * description: A wrapper for `node-fetch`.
  * url: https://github.com/afeiship/next-node-fetch
- * version: 1.0.8
- * date: 2020-01-05 20:34:18
+ * version: 1.1.0
+ * date: 2020-01-06 12:12:50
  * license: MIT
  */
 
