@@ -3,7 +3,7 @@
  * description: A wrapper for `node-fetch`.
  * url: https://github.com/afeiship/next-node-fetch
  * version: 1.2.0
- * date: 2020-01-06 19:56:58
+ * date: 2020-01-06 19:59:42
  * license: MIT
  */
 
@@ -42,11 +42,11 @@
         };
 
         return options.delay
-          ? options.fetch(url, config).then(responseHandler)
-          : options
+          ? options
               .fetch(url, config)
               .then(nxDelay(options.delay))
-              .then(responseHandler);
+              .then(responseHandler)
+          : options.fetch(url, config).then(responseHandler);
       },
       'get,delete,head,post,put,patch': function(inMethod) {
         return function(inUrl, inData, inOptions) {

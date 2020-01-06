@@ -33,11 +33,11 @@
         };
 
         return options.delay
-          ? options.fetch(url, config).then(responseHandler)
-          : options
+          ? options
               .fetch(url, config)
               .then(nxDelay(options.delay))
-              .then(responseHandler);
+              .then(responseHandler)
+          : options.fetch(url, config).then(responseHandler);
       },
       'get,delete,head,post,put,patch': function(inMethod) {
         return function(inUrl, inData, inOptions) {
