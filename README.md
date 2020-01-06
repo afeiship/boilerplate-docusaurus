@@ -40,3 +40,7 @@ NxNodeFetch.get('https://api.github.com/users/afeiship', null, { responseType:'j
     // .....
 // }
 ```
+
+## resources
+- https://hackersandslackers.com/making-api-requests-with-nodejs/
+- https://github.com/bitinn/node-fetch
