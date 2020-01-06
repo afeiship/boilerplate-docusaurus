@@ -17,6 +17,13 @@ npm install -S @feizheng/next-node-fetch
 | head    | (inUrl, inData, inOptions)           | The head api   |
 | patch   | (inUrl, inData, inOptions)           | The patch api  |
 
+## options
+| option       | type        | default               | description                  |
+| ------------ | ----------- | --------------------- | ---------------------------- |
+| fetch        | Function    | require('node-fetch') | c                            |
+| dataType     | String      | json                  | json/raw/urlencode/multipart |
+| responseType | String/Null | json                  | json/text/null               |
+
 ## usage
 ```js
 import NxNodeFetch from '@feizheng/next-node-fetch';
