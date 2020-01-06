@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/next-node-fetch",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A wrapper for `node-fetch`.",
   "homepage": "https://github.com/afeiship/next-node-fetch",
   "author": {
@@ -34,6 +34,7 @@
     "@feizheng/next-content-type": "^1.0.0",
     "@feizheng/next-data-transform": "^1.1.0",
     "@feizheng/next-deep-assign": "^1.1.0",
+    "@feizheng/next-delay": "^1.0.0",
     "@feizheng/next-js-core2": "^2.0.2",
     "@feizheng/next-param": "^1.0.0",
     "node-fetch": "^2.6.0"

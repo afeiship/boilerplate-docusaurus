@@ -18,11 +18,12 @@ npm install -S @feizheng/next-node-fetch
 | patch   | (inUrl, inData, inOptions)           | The patch api  |
 
 ## options
-| option       | type        | default               | description                  |
-| ------------ | ----------- | --------------------- | ---------------------------- |
-| fetch        | Function    | require('node-fetch') | Defult fetch implement       |
-| dataType     | String      | json                  | json/raw/urlencode/multipart |
-| responseType | String/Null | json                  | json/text/null               |
+| option       | type        | default               | description                       |
+| ------------ | ----------- | --------------------- | --------------------------------- |
+| fetch        | Function    | require('node-fetch') | Defult fetch implement            |
+| dataType     | String      | json                  | json/raw/urlencode/multipart      |
+| delay        | Number      | 0                     | The every request delay timer(ms) |
+| responseType | String/Null | json                  | json/text/null                    |
 
 ## usage
 ```js

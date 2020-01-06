@@ -3,7 +3,7 @@
  * description: A wrapper for `node-fetch`.
  * url: https://github.com/afeiship/next-node-fetch
  * version: 1.1.0
- * date: 2020-01-06 12:12:50
+ * date: 2020-01-06 19:55:54
  * license: MIT
  */
 
@@ -14,8 +14,9 @@
   var nxContentType = require('@feizheng/next-content-type');
   var nxDeepAssign = require('@feizheng/next-deep-assign');
   var nxParam = require('@feizheng/next-param');
+  var nxDelay = require('@feizheng/next-delay');
   var nodeFetch = require('node-fetch');
-  var DEFAULT_OPTIONS = { dataType: 'json', fetch: nodeFetch, responseType: 'json' };
+  var DEFAULT_OPTIONS = { dataType: 'json', delay: 0, fetch: nodeFetch, responseType: 'json' };
 
   var NxNodeFetch = nx.declare('nx.NodeFetch', {
     properties: {
@@ -39,7 +40,13 @@
         var responseHandler = function(res) {
           return options.responseType ? res[options.responseType]() : res;
         };
-        return options.fetch(url, config).then(responseHandler);
+
+        return options.delay
+          ? options.fetch(url, config).then(responseHandler)
+          : options
+              .fetch(url, config)
+              .then(nxDelay(options.delay))
+              .then(responseHandler);
       },
       'get,delete,head,post,put,patch': function(inMethod) {
         return function(inUrl, inData, inOptions) {

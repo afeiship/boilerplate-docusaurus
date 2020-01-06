@@ -5,8 +5,9 @@
   var nxContentType = require('@feizheng/next-content-type');
   var nxDeepAssign = require('@feizheng/next-deep-assign');
   var nxParam = require('@feizheng/next-param');
+  var nxDelay = require('@feizheng/next-delay');
   var nodeFetch = require('node-fetch');
-  var DEFAULT_OPTIONS = { dataType: 'json', fetch: nodeFetch, responseType: 'json' };
+  var DEFAULT_OPTIONS = { dataType: 'json', delay: 0, fetch: nodeFetch, responseType: 'json' };
 
   var NxNodeFetch = nx.declare('nx.NodeFetch', {
     properties: {
@@ -30,7 +31,13 @@
         var responseHandler = function(res) {
           return options.responseType ? res[options.responseType]() : res;
         };
-        return options.fetch(url, config).then(responseHandler);
+
+        return options.delay
+          ? options.fetch(url, config).then(responseHandler)
+          : options
+              .fetch(url, config)
+              .then(nxDelay(options.delay))
+              .then(responseHandler);
       },
       'get,delete,head,post,put,patch': function(inMethod) {
         return function(inUrl, inData, inOptions) {
