@@ -5,7 +5,7 @@
   describe('NxNodeFetch.methods', function() {
     test('fetch:get https://www.baidu.com', function(done) {
       NxNodeFetch.get('https://www.baidu.com', null, { responseType: 'text' }).then((res) => {
-        expect(res.includes('http://www.baidu.com/')).toBe(true);
+        expect(res.includes('百度一下，你就知道')).toBe(true);
         done();
       });
     });
