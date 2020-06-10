@@ -8,4 +8,8 @@ yarn-error.log
 package-lock.json
 .DS_Store
 .idea
+
+
+# vscode
 .vscode
+.history
