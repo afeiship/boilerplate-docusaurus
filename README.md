@@ -1,47 +1,33 @@
-# next-node-fetch
-> A wrapper for `node-fetch`.
+# Website
 
-## installation
-```bash
-npm install -S @feizheng/next-node-fetch
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+### Installation
+
+```
+$ yarn
 ```
 
-## apis
-| api     | params                               | description    |
-| ------- | ------------------------------------ | -------------- |
-| request | (inUrl, inMethod, inData, inOptions) | The entry api  |
-| get     | (inUrl, inData, inOptions)           | The get api    |
-| post    | (inUrl, inData, inOptions)           | The post api   |
-| delete  | (inUrl, inData, inOptions)           | The delete api |
-| put     | (inUrl, inData, inOptions)           | The put api    |
-| head    | (inUrl, inData, inOptions)           | The head api   |
-| patch   | (inUrl, inData, inOptions)           | The patch api  |
+### Local Development
 
-## options
-| option       | type        | default               | description                       |
-| ------------ | ----------- | --------------------- | --------------------------------- |
-| fetch        | Function    | require('node-fetch') | Defult fetch implement            |
-| dataType     | String      | json                  | json/raw/urlencoded/multipart     |
-| delay        | Number      | 0                     | The every request delay timer(ms) |
-| responseType | String/Null | json                  | json/text/null                    |
-
-## usage
-```js
-import NxNodeFetch from '@feizheng/next-node-fetch';
-
-NxNodeFetch.get('https://api.github.com/users/afeiship', null, { responseType:'json' }).then(res=>{
-  console.log(res);
-});
-
-// {
-//   login: 'afeiship',
-//   id: 3038631,
-//   node_id: 'MDQ6VXNlcjMwMzg2MzE=',
-//   avatar_url: 'https://avatars2.githubusercontent.com/u/3038631?v=4',
-    // .....
-// }
+```
+$ yarn start
 ```
 
-## resources
-- https://hackersandslackers.com/making-api-requests-with-nodejs/
-- https://github.com/bitinn/node-fetch
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+```
+$ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

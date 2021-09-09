@@ -1,45 +1,40 @@
 {
-  "name": "@feizheng/next-node-fetch",
-  "version": "1.2.6",
-  "description": "A wrapper for `node-fetch`.",
-  "homepage": "https://github.com/afeiship/next-node-fetch",
-  "author": {
-    "name": "afei",
-    "email": "1290657123@qq.com"
-  },
+  "name": "boilerplate-docusaurus",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "build": "gulp",
-    "test": "jest"
-  },
-  "main": "dist/next-node-fetch.js",
-  "license": "MIT",
-  "devDependencies": {
-    "@feizheng/gulp-pkg-header": "^1.0.4",
-    "@feizheng/rake-git": "^1.2.1",
-    "del": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-debug": "^4.0.0",
-    "gulp-ignore": "^3.0.0",
-    "gulp-load-plugins": "^2.0.3",
-    "gulp-rename": "^2.0.0",
-    "gulp-size": "^3.0.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "jest": "^26.0.1",
-    "uglify-save-license": "^0.4.1",
-    "yargs": "^15.3.1"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@feizheng/next-content-type": "^1.1.4",
-    "@feizheng/next-data-transform": "^1.1.2",
-    "@feizheng/next-deep-assign": "^1.1.4",
-    "@feizheng/next-delay": "^1.1.2",
-    "@feizheng/next-js-core2": "^2.5.0",
-    "@feizheng/next-param": "^1.1.1",
-    "node-fetch": "^2.6.0"
+    "@docusaurus/core": "2.0.0-beta.6",
+    "@docusaurus/preset-classic": "2.0.0-beta.6",
+    "@mdx-js/react": "^1.6.21",
+    "@svgr/webpack": "^5.5.0",
+    "clsx": "^1.1.1",
+    "file-loader": "^6.2.0",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "url-loader": "^4.1.1"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
