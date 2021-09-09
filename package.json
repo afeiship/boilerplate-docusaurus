@@ -1,12 +1,12 @@
 {
-  "name": "boilerplate-docusaurus",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@boilerplate-scope/boilerplate-docusaurus",
+  "version": "1.0.0",
+  "description": "boilerplate-docusaurus-description",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "swizzle": "docusaurus swizzle",
+    "swizzle": "docusaurus swizzle @docusaurus/theme-live-codeblock ReactLiveScope --danger",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
@@ -16,6 +16,7 @@
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.6",
     "@docusaurus/preset-classic": "2.0.0-beta.6",
+    "@docusaurus/theme-live-codeblock": "^2.0.0-beta.6",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "clsx": "^1.1.1",
