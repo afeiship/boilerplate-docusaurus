@@ -53,7 +53,7 @@ module.exports = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
+        // theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
