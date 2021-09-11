@@ -55,4 +55,17 @@ module.exports = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: [
+    [
+      "docusaurus-plugin-module-alias",
+      {
+        alias: {
+          "@jswork/styled-box": path.resolve(
+            __dirname,
+            "../styled-box/src/main.ts"
+          ),
+        },
+      },
+    ],
+  ],
 };

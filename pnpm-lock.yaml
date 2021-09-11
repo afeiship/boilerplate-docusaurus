@@ -8,6 +8,7 @@ specifiers:
   '@mdx-js/react': ^1.6.21
   '@svgr/webpack': ^5.5.0
   clsx: ^1.1.1
+  docusaurus-plugin-module-alias: ^0.0.2
   file-loader: ^6.2.0
   prism-react-renderer: ^1.2.1
   react: ^17.0.1
@@ -27,6 +28,9 @@ dependencies:
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   url-loader: 4.1.1_file-loader@6.2.0
+
+devDependencies:
+  docusaurus-plugin-module-alias: registry.nlark.com/docusaurus-plugin-module-alias/0.0.2
 
 packages:
 
@@ -150,6 +154,15 @@ packages:
       '@babel/types': registry.nlark.com/@babel/types/7.15.4
       esutils: 2.0.3
     dev: false
+
+  /@hapi/hoek/9.2.0:
+    resolution: {integrity: sha1-85M6RONlhk9NrV25QVgQbVEegTE=, tarball: '@hapi/hoek/download/@hapi/hoek-9.2.0.tgz'}
+
+  /@sideway/formula/3.0.0:
+    resolution: {integrity: sha1-/hWK7jLmvV3oUES+YVvAhHigoTw=, tarball: '@sideway/formula/download/@sideway/formula-3.0.0.tgz'}
+
+  /@sideway/pinpoint/2.0.0:
+    resolution: {integrity: sha1-z/j/rcNyrSn9P3gneusp5jLMcN8=, tarball: '@sideway/pinpoint/download/@sideway/pinpoint-2.0.0.tgz'}
 
   /@svgr/babel-plugin-add-jsx-attribute/5.4.0:
     resolution: {integrity: sha1-ge9hlHuyaOudUFI0RvnGOPs1WQY=, tarball: '@svgr/babel-plugin-add-jsx-attribute/download/@svgr/babel-plugin-add-jsx-attribute-5.4.0.tgz'}
@@ -3970,6 +3983,8 @@ packages:
       '@babel/helper-optimise-call-expression': registry.nlark.com/@babel/helper-optimise-call-expression/7.15.4
       '@babel/helper-replace-supers': registry.nlark.com/@babel/helper-replace-supers/7.15.4
       '@babel/helper-split-export-declaration': registry.nlark.com/@babel/helper-split-export-declaration/7.15.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/helper-create-regexp-features-plugin/7.14.5_@babel+core@7.15.5:
@@ -4077,6 +4092,8 @@ packages:
       '@babel/template': registry.nlark.com/@babel/template/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/helper-optimise-call-expression/7.15.4:
@@ -4122,6 +4139,8 @@ packages:
       '@babel/helper-optimise-call-expression': registry.nlark.com/@babel/helper-optimise-call-expression/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/helper-simple-access/7.15.4:
@@ -4186,6 +4205,8 @@ packages:
       '@babel/template': registry.nlark.com/@babel/template/7.15.4
       '@babel/traverse': registry.nlark.com/@babel/traverse/7.15.4
       '@babel/types': registry.nlark.com/@babel/types/7.15.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/highlight/7.14.5:
@@ -4249,6 +4270,8 @@ packages:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
       '@babel/helper-create-class-features-plugin': registry.nlark.com/@babel/helper-create-class-features-plugin/7.15.4_@babel+core@7.15.5
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-class-static-block/7.15.4_@babel+core@7.15.5:
@@ -4264,6 +4287,8 @@ packages:
       '@babel/helper-create-class-features-plugin': registry.nlark.com/@babel/helper-create-class-features-plugin/7.15.4_@babel+core@7.15.5
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       '@babel/plugin-syntax-class-static-block': registry.nlark.com/@babel/plugin-syntax-class-static-block/7.14.5_@babel+core@7.15.5
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-dynamic-import/7.14.5_@babel+core@7.15.5:
@@ -4422,6 +4447,8 @@ packages:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
       '@babel/helper-create-class-features-plugin': registry.nlark.com/@babel/helper-create-class-features-plugin/7.15.4_@babel+core@7.15.5
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-private-property-in-object/7.15.4_@babel+core@7.15.5:
@@ -4438,6 +4465,8 @@ packages:
       '@babel/helper-create-class-features-plugin': registry.nlark.com/@babel/helper-create-class-features-plugin/7.15.4_@babel+core@7.15.5
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       '@babel/plugin-syntax-private-property-in-object': registry.nlark.com/@babel/plugin-syntax-private-property-in-object/7.14.5_@babel+core@7.15.5
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-proposal-unicode-property-regex/7.14.5_@babel+core@7.15.5:
@@ -4602,6 +4631,8 @@ packages:
       '@babel/helper-replace-supers': registry.nlark.com/@babel/helper-replace-supers/7.15.4
       '@babel/helper-split-export-declaration': registry.nlark.com/@babel/helper-split-export-declaration/7.15.4
       globals: registry.nlark.com/globals/11.12.0
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-computed-properties/7.14.5_@babel+core@7.15.5:
@@ -4737,6 +4768,8 @@ packages:
       '@babel/helper-module-transforms': registry.nlark.com/@babel/helper-module-transforms/7.15.4
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       babel-plugin-dynamic-import-node: 2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-modules-commonjs/7.15.4_@babel+core@7.15.5:
@@ -4753,6 +4786,8 @@ packages:
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       '@babel/helper-simple-access': registry.nlark.com/@babel/helper-simple-access/7.15.4
       babel-plugin-dynamic-import-node: 2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-modules-systemjs/7.15.4_@babel+core@7.15.5:
@@ -4770,6 +4805,8 @@ packages:
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       '@babel/helper-validator-identifier': registry.nlark.com/@babel/helper-validator-identifier/7.14.9
       babel-plugin-dynamic-import-node: 2.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-modules-umd/7.14.5_@babel+core@7.15.5:
@@ -4784,6 +4821,8 @@ packages:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
       '@babel/helper-module-transforms': registry.nlark.com/@babel/helper-module-transforms/7.15.4
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-named-capturing-groups-regex/7.14.9_@babel+core@7.15.5:
@@ -4824,6 +4863,8 @@ packages:
       '@babel/core': registry.nlark.com/@babel/core/7.15.5
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       '@babel/helper-replace-supers': registry.nlark.com/@babel/helper-replace-supers/7.15.4
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-parameters/7.15.4_@babel+core@7.12.9:
@@ -5060,6 +5101,8 @@ packages:
       '@babel/helper-create-class-features-plugin': registry.nlark.com/@babel/helper-create-class-features-plugin/7.15.4_@babel+core@7.15.5
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       '@babel/plugin-syntax-typescript': registry.nlark.com/@babel/plugin-syntax-typescript/7.14.5_@babel+core@7.15.5
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/plugin-transform-unicode-escapes/7.14.5_@babel+core@7.15.5:
@@ -5207,6 +5250,8 @@ packages:
       '@babel/helper-plugin-utils': registry.nlark.com/@babel/helper-plugin-utils/7.14.5
       '@babel/helper-validator-option': registry.nlark.com/@babel/helper-validator-option/7.14.5
       '@babel/plugin-transform-typescript': registry.nlark.com/@babel/plugin-transform-typescript/7.15.4_@babel+core@7.15.5
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@babel/runtime-corejs3/7.15.4:
@@ -5908,6 +5953,11 @@ packages:
     dependencies:
       '@docusaurus/types': registry.nlark.com/@docusaurus/types/2.0.0-beta.6
       tslib: registry.nlark.com/tslib/2.3.1
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - uglify-js
+      - webpack-cli
     dev: false
 
   registry.nlark.com/@docusaurus/utils-validation/2.0.0-beta.6:
@@ -5939,21 +5989,19 @@ packages:
       micromatch: 4.0.4
       resolve-pathname: registry.nlark.com/resolve-pathname/3.0.0
       tslib: registry.nlark.com/tslib/2.3.1
-    dev: false
-
-  registry.nlark.com/@hapi/hoek/9.2.0:
-    resolution: {integrity: sha1-85M6RONlhk9NrV25QVgQbVEegTE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@hapi/hoek/download/@hapi/hoek-9.2.0.tgz}
-    name: '@hapi/hoek'
-    version: 9.2.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - uglify-js
+      - webpack-cli
     dev: false
 
   registry.nlark.com/@hapi/topo/5.1.0:
-    resolution: {integrity: sha1-3ESOMyxsbjek3AL9hLqNRLmvsBI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@hapi/topo/download/@hapi/topo-5.1.0.tgz}
+    resolution: {integrity: sha1-3ESOMyxsbjek3AL9hLqNRLmvsBI=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@hapi/topo/download/@hapi/topo-5.1.0.tgz?cache=0&sync_timestamp=1624917447552&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40hapi%2Ftopo%2Fdownload%2F%40hapi%2Ftopo-5.1.0.tgz}
     name: '@hapi/topo'
     version: 5.1.0
     dependencies:
-      '@hapi/hoek': registry.nlark.com/@hapi/hoek/9.2.0
-    dev: false
+      '@hapi/hoek': 9.2.0
 
   registry.nlark.com/@mdx-js/mdx/1.6.22:
     resolution: {integrity: sha1-inIxV7+Q548X3A8nmVOY5scx8bo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@mdx-js/mdx/download/@mdx-js/mdx-1.6.22.tgz}
@@ -6055,20 +6103,7 @@ packages:
     name: '@sideway/address'
     version: 4.1.2
     dependencies:
-      '@hapi/hoek': registry.nlark.com/@hapi/hoek/9.2.0
-    dev: false
-
-  registry.nlark.com/@sideway/formula/3.0.0:
-    resolution: {integrity: sha1-/hWK7jLmvV3oUES+YVvAhHigoTw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sideway/formula/download/@sideway/formula-3.0.0.tgz}
-    name: '@sideway/formula'
-    version: 3.0.0
-    dev: false
-
-  registry.nlark.com/@sideway/pinpoint/2.0.0:
-    resolution: {integrity: sha1-z/j/rcNyrSn9P3gneusp5jLMcN8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sideway/pinpoint/download/@sideway/pinpoint-2.0.0.tgz}
-    name: '@sideway/pinpoint'
-    version: 2.0.0
-    dev: false
+      '@hapi/hoek': 9.2.0
 
   registry.nlark.com/@sindresorhus/is/0.14.0:
     resolution: {integrity: sha1-n7OjzzEyMoFR81PeRjLgHlIQK+o=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@sindresorhus/is/download/@sindresorhus/is-0.14.0.tgz}
@@ -6112,6 +6147,8 @@ packages:
       '@svgr/plugin-jsx': registry.nlark.com/@svgr/plugin-jsx/5.5.0
       camelcase: 6.2.0
       cosmiconfig: registry.nlark.com/cosmiconfig/7.0.1
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   registry.nlark.com/@svgr/hast-util-to-babel-ast/5.5.0:
@@ -7363,6 +7400,15 @@ packages:
       safe-buffer: registry.nlark.com/safe-buffer/5.2.1
     dev: false
 
+  registry.nlark.com/docusaurus-plugin-module-alias/0.0.2:
+    resolution: {integrity: sha1-At+OUocAat+O98FdNCPGq96yEe8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/docusaurus-plugin-module-alias/download/docusaurus-plugin-module-alias-0.0.2.tgz}
+    name: docusaurus-plugin-module-alias
+    version: 0.0.2
+    engines: {node: '>=6.4.0'}
+    dependencies:
+      joi: registry.nlark.com/joi/17.4.2
+    dev: true
+
   registry.nlark.com/dom-iterator/1.0.0:
     resolution: {integrity: sha1-nAmJmEbsQcLSV63E1gFeR1nvBa0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/dom-iterator/download/dom-iterator-1.0.0.tgz}
     name: dom-iterator
@@ -8425,12 +8471,11 @@ packages:
     name: joi
     version: 17.4.2
     dependencies:
-      '@hapi/hoek': registry.nlark.com/@hapi/hoek/9.2.0
+      '@hapi/hoek': 9.2.0
       '@hapi/topo': registry.nlark.com/@hapi/topo/5.1.0
       '@sideway/address': registry.nlark.com/@sideway/address/4.1.2
-      '@sideway/formula': registry.nlark.com/@sideway/formula/3.0.0
-      '@sideway/pinpoint': registry.nlark.com/@sideway/pinpoint/2.0.0
-    dev: false
+      '@sideway/formula': 3.0.0
+      '@sideway/pinpoint': 2.0.0
 
   registry.nlark.com/js-tokens/4.0.0:
     resolution: {integrity: sha1-GSA/tZmR35jjoocFDUZHzerzJJk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/js-tokens/download/js-tokens-4.0.0.tgz}
