@@ -42,10 +42,10 @@
   "devDependencies": {
     "docusaurus-plugin-module-alias": "^0.0.2"
   },
-  "boilerplate": "@boilerplate-scope/boilerplate-docusaurus",
+  "boilerplate": "boilerplate-docusaurus",
   "homepage": "https://js.work",
   "repository": {
     "type": "git",
-    "url": "https://github.com/afeiship/@boilerplate-scope/boilerplate-docusaurus"
+    "url": "https://github.com/afeiship/boilerplate-docusaurus.git"
   }
 }
